@@ -9,16 +9,22 @@
 <body>
   <header>
 
-    <h1><a href="./index.html">Tech Returner News</a></h1>
+    <a href="#menu">Skip to Menu</a> 
+    <a href="#article">Skip to Article</a>
+    <a href="#a11yPrefs">Skip to Accessibility Preferences</a>
 
-    <section id="a11yPrefs">
-      <h3>Preferences</h3>
+    <h1 id="top"><a href="./index.html">Tech Returner News</a></h1>
+
+    <section id="a11yPrefs"> 
+
+      <h2>Preferences</h2>
       <p>We aim to make this site accessible to a wide audience and to ensure a great experience for all users by confirming to <a href="https://www.w3.org/">World Wide Web consortium</a> accessibility guidelines (W3C's WCAG).</p> 
       <p>However, if you are having trouble reading this website you can change the way it looks or disable some of its functionalities.</p>
       <label><input id="a11yPrefsCheckbox" type="checkbox" checked="checked" onchange="updateFlashMove();"> Allow flashing elements - Untick this to disable flashing and moving elements.</label>
+
     </section>
 
-    <nav>
+    <nav id="menu">
       <ul>
         <li><a href="#">News</a></li>
         <li><a href="#">Opinion</a></li>
@@ -33,9 +39,9 @@
 
   </header>
   <main>
-    <article id="mainarticle">
+    <article>
 
-      <h2>Accessibility Features: Easy Wins</h2>
+      <h2 id="article">Accessibility Features: Easy Wins</h2>
 
       <h3>Handy tips on how to create accessible websites for everyone</h3>
 
@@ -54,7 +60,10 @@
         </ul>
       </section>
 
-      <img src="./assets/images/raimond-klavins-unrGcAlGk8A-unsplash.jpg" alt="A pirate ship in full sail at sunset." width="300" height="400" />
+      <img src="./assets/images/pexels-vanessa-garcia-6325946.jpg" alt="A man with a laptop looking towards a window." width="400" height="300" /> 
+      <aside>
+        <p>Image by Vanessa Garcia</p>
+      </aside>
 
       <h3 id="introduction">Introduction</h3>
       <p>
@@ -101,7 +110,7 @@
       </dl>
 
       <h3 id="conclusion">Conclusion</h3>
-      <p>by spending just a little more time on getting the building blocks of the web right, developers can help create an Internet that works for <em>everyone</em>.</p>
+      <p>By spending just a little more time on getting the building blocks of the web right, developers can help create an Internet that works for <em>everyone</em>.</p>
 
       <aside>
         <p>For more information view <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Web Accessiblity</a></p>
@@ -133,7 +142,7 @@
   </main>
   <footer>
 
-    <img src="https://twitter.com/techreturners/photo" alt="Tech Returners Logo" /> 
+    <img src="./assets/images/TECHRETURNERS.png" alt="Tech Returners Logo" width="50" height="50" /> 
 
     <section>
       <h3>Links</h3>
@@ -151,7 +160,7 @@
 
     <p>&copy; 2021 Tech Returners News</p>
 
-
+    <a href="#top">Back to Top</a>
   </footer>
   <script src="./assets/scripts/changeFlashMove.js"></script>
 </body>
